@@ -1,22 +1,10 @@
 /**
- * Author:Ab Kurk
- * version: 1.0
- * date: 4/02/2018
- * Description: 
- * This sketch is part of the guide to putting your Arduino to sleep
- * tutorial. We use the:
- * Adafruit DS3231 RTC
- * Adafruit 5V ready Micro SD break out board
- * Arduino Pro Mini
- * DHT11 or DHT22 humidety/Temperature sensor
- * In this example we use the RTC to wake up the Arduino to log the temp and humidity on to an SD card.
- * After the data has been logged the Arduino goes back to sleep and gets woken up 5 minutes later to 
- * start all over again
- * Link To Tutorial http://www.thearduinomakerman.info/blog/2018/1/24/guide-to-arduino-sleep-mode
- * Link To Project   http://www.thearduinomakerman.info/blog/2018/2/5/wakeup-rtc-datalogger
+     * Author:Ab Kurk   version: 1.0    date: 4/02/2018
+ * Description: This sketch is part of the guide to putting your Arduino to sleep tutorial. We use the:
+ * Adafruit DS3231 RTC. In this example we use the RTC to wake up the Arduino to do something. After the operations has been done the Arduino goes back to sleep and gets woken up 5 minutes later to start all over again. Link To Tutorial http://www.thearduinomakerman.info/blog/2018/1/24/guide-to-arduino-sleep-mode Link To Project   http://www.thearduinomakerman.info/blog/2018/2/5/wakeup-rtc-datalogger
  */
 
-#include <avr/sleep.h>//this AVR library contains the methods that controls the sleep modes
+#include <avr/sleep.h>  //this AVR library contains the methods that controls the sleep modes
 #include <DS3232RTC.h>  //RTC Library https://github.com/JChristensen/DS3232RTC
 #include <Streaming.h>
 #include <Arduino.h>
